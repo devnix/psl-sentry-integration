@@ -1,6 +1,6 @@
 name: "code coverage"
 
-on: 
+on:
   pull_request: ~
   push: ~
 
@@ -23,7 +23,7 @@ jobs:
           extensions: bcmath, mbstring, intl, sodium, json
 
       - name: "installing dependencies"
-        run: "composer install --no-interaction --no-progress --ignore-platform-req php"
+        run: "composer install --no-interaction --no-progress"
 
       - name: "running unit tests ( phpunit )"
         run: "php vendor/bin/phpunit"

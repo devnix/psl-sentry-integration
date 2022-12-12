@@ -1,6 +1,6 @@
 name: "unit tests"
 
-on: 
+on:
   pull_request: ~
   push: ~
 
@@ -42,7 +42,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}"
 
       - name: "installing dependencies"
-        run: "composer install --no-interaction --no-progress --ignore-platform-req php"
+        run: "composer install --no-interaction --no-progress"
 
       - name: "running unit tests ( phpunit )"
         run: "php vendor/bin/phpunit"
