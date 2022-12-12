@@ -1,6 +1,6 @@
 # Security
 
-If you discover a security vulnerability within PSL, please send an e-mail to Saif Eddin Gmati via azjezz@protonmail.com.
+If you discover a security vulnerability within PSL, please send an e-mail to Pablo Largo Mohedano via devnix.code@gmail.com.
 
 Please withhold public disclosure until after we have addressed the vulnerability.
 

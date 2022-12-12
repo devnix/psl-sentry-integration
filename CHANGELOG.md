@@ -1,5 +1,5 @@
-# php-standard-library/repository-template changelog
+# devnix/psl-sentry-integration changelog
 
-## 1.0.0
+## 0.1.0
 
-- initial release.
+- Support for `Psl\Type\Exception\Exception` type traces

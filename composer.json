@@ -1,12 +1,12 @@
 {
-    "name": "php-standard-library/repository-template",
+    "name": "devnix/psl-sentry-integration",
     "type": "library",
-    "description": "PHP Standard Library: Repository Template",
+    "description": "PHP Standard Library: Sentry integration",
     "license": "MIT",
     "authors": [
         {
-            "name": "azjezz",
-            "email": "azjezz@protonmail.com"
+            "name": "devnix",
+            "email": "devnix.code@gmail.com"
         }
     ],
     "require": {
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Psl\\": "src/"
+            "Psl\\Sentry\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Psl\\Tests\\": "tests/"
+            "Psl\\Sentry\\Tests\\": "tests/"
         }
     },
     "scripts": {
