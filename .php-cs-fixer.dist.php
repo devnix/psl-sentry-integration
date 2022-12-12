@@ -1,6 +1,6 @@
 <?php
 
-return PhpCsFixer\Config::create()
+return  (new PhpCsFixer\Config())
     ->setFinder(
         \Symfony\Component\Finder\Finder::create()
             ->in([
@@ -12,7 +12,6 @@ return PhpCsFixer\Config::create()
     ->setRules([
         'align_multiline_comment' => true,
         'array_indentation' => true,
-        'declare_strict_types' => true,
         // Currently it is not possible to mark all classes as final (exceptions etc.)
         // We can run this fixer periodically on the tests folder only.
         // 'final_class' => true,
@@ -24,7 +23,7 @@ return PhpCsFixer\Config::create()
         'list_syntax' => [
             'syntax' => 'short',
         ],
-        'lowercase_constants' => true,
+        'constant_case' => ['case' => 'lower'],
         'multiline_comment_opening_closing' => true,
         'native_function_casing' => true,
         'no_empty_phpdoc' => true,
@@ -49,7 +48,6 @@ return PhpCsFixer\Config::create()
         'strict_comparison' => true,
         'strict_param' => true,
         'no_blank_lines_after_phpdoc' => true,
-        'no_empty_phpdoc' => true,
         'phpdoc_align' => [
             'align' => 'left',
         ],
@@ -77,6 +75,5 @@ return PhpCsFixer\Config::create()
         'no_empty_statement' => true,
         'semicolon_after_instruction' => true,
         'declare_strict_types' => true,
-        'strict_param' => true,
     ])
 ;
