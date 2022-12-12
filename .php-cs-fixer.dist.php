@@ -72,6 +72,7 @@ return  (new PhpCsFixer\Config())
         'phpdoc_tag_casing' => true,
         'phpdoc_trim' => true,
         'phpdoc_trim_consecutive_blank_line_separation' => true,
+        'blank_line_after_opening_tag' => true,
         'no_empty_statement' => true,
         'semicolon_after_instruction' => true,
         'declare_strict_types' => true,
