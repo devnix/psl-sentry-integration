@@ -41,7 +41,7 @@ final class PslIntegration implements IntegrationInterface
                 return $event;
             }
 
-            foreach ($this->contexts as $context) {
+            foreach ($integration->contexts as $context) {
                 $context->addContext($event, $hint);
             }
 
